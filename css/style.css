@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+
+:root {
+  --bg: #f2f2f2;
+  --primary-color: rgb(250, 6, 6);
+  --secundary-color: rgb(145, 0, 0);
+  --font-primary: rgb(44, 40, 40);
+  --font-secondary: #c2c2c2;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: poppins;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+header {
+  width: 100%;
+  height: 40vh;
+}
+
+main {
+  width: 100%;
+  height: 60vh;
+}
+
+section.banner {
+  width: 100%;
+  height: 30vh;
+  background-image: url(../image/doce.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section.types {
+  width: 100%;
+  height: 10vh;
+  margin: 0 auto;
+  background-color: #c2c2c2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.type {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.type img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 1rem;
+}
+
+.item {
+  padding: 2%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr 0.2fr;
+  gap: 1rem;
+  /*background-color: black;*/
+  border-bottom: 1px solid silver;
+}
+
+.item .description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .description h1 {
+  font-size: 16px;
+  color: var(--font-primary);
+}
+
+.item .description p {
+  font-size: 8px;
+  color: var(--font-secondary);
+}
+
+.item .description h2 {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgb(2, 175, 16);
+}
+
+.item .image img {
+  width: 130px;
+  height: 95px;
+}
+
+.item .counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.item .counter h2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--font-secondary);
+}
+
+.item .counter button {
+  border: none;
+  width: 100%;
+  height: 30px;
+}
+
+.item .counter button i {
+  color: var(--secundary-color);
+}
+
+.cart {
+  padding: 4%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+}
+
+.cart h1 {
+  color: var(--primary-color);
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.car {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.car_text {
+  color: var(--font-primary);
+  font-weight: 500;
+}
+
+.car_text .price {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.car_btn {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 32px;
+  border-radius: 30px;
+}
+
+.car_btn a {
+  text-decoration: none;
+  color: #ffff;
+}
